@@ -21,6 +21,10 @@ a {
   list-style: none;
 }
 
+p {
+  line-height: 1.2;
+}
+
 .main {
   background-color: #ffffff;
   padding: 2rem;
