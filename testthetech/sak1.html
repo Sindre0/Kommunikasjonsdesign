@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="sak1.css" type="text/css">
-    <title>Document</title>
+    <title>sak1</title>
 </head>
 
 <body>
@@ -27,9 +27,9 @@
             </section>
 
             <section class="section normal-section">
-                <h1>Altfor dyrt. Så vidt det går rundt</h1>
-                <img src="bildet/buss.webp" alt="buss" />
                 <article>
+                    <h1>Altfor dyrt. Så vidt det går rundt</h1>
+                    <img src="bildet/buss.webp" alt="buss" />
                     <p>Studenter ved Høgskolen i Østfold står overfor betydelige utfordringer når det gjelder
                         pendling til skolen. Mange av dem bor i nærliggende byer som Sarpsborg og Moss, og
                         bruker betydelig tid og penger av studielånet på transport. Dette påvirker naturligvis
@@ -87,32 +87,32 @@
 <script>
 
     const sections = document.querySelectorAll(".section");
-        const container = document.querySelector(".container");
+    const container = document.querySelector(".container");
 
 
-        const options = {
-            root: null,
-            threshold: 0.5,
-        };
+    const options = {
+        root: null,
+        threshold: 0.5,
+    };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    const bgImage = entry.target.getAttribute("data-bg");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const bgImage = entry.target.getAttribute("data-bg");
 
-                    if (bgImage) {
+                if (bgImage) {
+                    container.style.backgroundImage = `url(${bgImage})`;
+
+                    setTimeout(() => {
                         container.style.backgroundImage = `url(${bgImage})`;
-
-                        setTimeout(() => {
-                            container.style.backgroundImage = `url(${bgImage})`;
-                        }, 1000);
-                    }
+                    }, 1000);
                 }
-            });
-        }, options);
-
-        sections.forEach((section) => {
-            observer.observe(section);
+            }
         });
+    }, options);
+
+    sections.forEach((section) => {
+        observer.observe(section);
+    });
 
 </script>

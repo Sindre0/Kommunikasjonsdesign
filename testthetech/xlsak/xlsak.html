@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xl</title>
+    <link rel="stylesheet" href="xlsak.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- scroll funksjon -->
+        <section class="section" data-bg="../bildet/tornet.jpg">
+            <p class="bgp">Tekst for ekstra seksjon...1</p>
+        </section>
+        <section class="section" data-bg="../bildet/nummertre.webp">
+            <p class="bgp">Tekst for ekstra seksjon...2</p>
+        </section>
+        <section class="section" data-bg="../bildet/bussto.jpg">
+            <p class="bgp">Tekst for ekstra seksjon...3</p>
+        </section>
+
+
+
+        <!-- normalseksjon -->
+        <section class="section normal-section attention">
+            <h1>Krimbølge herjer i Sarpsborg: Økt vinningskriminalitet vekker bekymring</h1>
+            <img src="../bildet/buss.webp" alt="buss" />
+            <article>
+                <div>
+                    I Sarpsborg opplever innbyggerne en økning i vinningskriminalitet som skaper
+                    usikkerhet og uro i lokalsamfunnet. Politiet har det siste året sett en markant økning i
+                    tyverier og skadeverk, spesielt i bykjernen, Klavestadhaugen og Grålum. Innbrudd i biler
+                    og boliger, tyverier fra garasjer og hærverk er noen av problemene politiet nå står
+                    overfor. Hvordan påvirker disse kriminelle handlingene oss vanlige mennesker i
+                    samfunnet?
+                    </p>                    
+            </article>
+            <article>
+                <h2>
+                    Økning i kriminalitet
+                </h2>
+                <p>
+                    Overbetjent ved politiet i Sarpsborg, Roger Bøe peker på bekymringsfulle tall.
+                    Sammenlignet med samme tid i fjor har antall vinningssaker økt med 35 prosent, fra
+                    925 til 1148 saker hittil i år, som tilsvarer en økning på 223 forhold eller med andre ord
+                    223 flere berørte mennesker med ubehagelige opplevelser.
+                    - Vi ser at sentrum, Klavestadhaugen og Grålum er spesielt utsatt her i byen. Innbrudd i
+                    boliger har nærmest doblet seg i enkelte områder, forteller Bøe.
+                    Det er særlig tyverier fra bil og grove innbrudd i boliger som utmerker seg i statistikken,
+                    og flere av sakene peker mot såkalte mobile vinningskriminelle, altså personer som
+                    reiser rundt i Norge og gjennomfører innbrudd på ulike steder langs hovedveiene før de
+                    forlater området raskt.
+                    Samtidig har politiet også merket en økning i hærverk og skadeverk, særlig på kjøretøy,
+                    trolig gjort av de samme bande.
+                    - Skadeverkene vi ser nå, kunne i flere tilfeller nesten vært regnet som tyveri. Det er
+                    knust ruter i biler, og i noen tilfeller blir det også rapportert om verktøy som mangler,
+                    forklarer Bøe.
+                    I noen tilfeller oppdager bileiere ikke at noe er borte før de har levert anmeldelsen, noe
+                    som kan føre til feilaktig statistikk da disse tilfellene egentlig hadde gått under
+                    vinningssaker.
+                    Bøe peker på en ny utfordring i politiets arbeid mot vinningskriminalitet: overgangen til
+                    nettbaserte anmeldelser. Selv om dette gjør det enklere for folk å anmelde hendelser
+                    hjemmefra, fører det også til at viktige detaljer ofte blir oversett.
+                    - Tidligere, når folk møtte opp på stasjonen for å anmelde, kunne vi stille
+                    oppfølgingsspørsmål som avdekket flere stjålne gjenstander eller viktige spor. Nå skjer
+                    det ofte at folk oppdager manglende eiendeler først etter at anmeldelsen er sendt inn,
+                    og da blir det ikke alltid oppdatert i saken, forklarer Bøe.
+                    - Dette kan bidra til mørketall, hvor mange tyverier og skader ikke blir registrert i
+                    statistikken, noe som igjen gjør det vanskeligere å få et helhetlig bilde av kriminaliteten i
+                    området, legger han til.
+                    Dette illustrerer en utfordring i hvordan digitalisering av politiets tjenester kan påvirke
+                    bekjempelsen av kriminalitet.
+                    Et område hvor kriminalitetsstatistikken også kan være misvisende, er butikktyverier.
+                    Bøe forklarer at mange butikker, særlig i Sarpsborg øst, velger å ikke anmelde tyverier,
+                    selv når de blir oppdaget.
+                    - For butikkene er det ofte mer lønnsomt å la være enn å bruke tid på en anmeldelse
+                    som sannsynligvis blir henlagt. Dette gjelder særlig mindre tyverier, som sjokolade eller
+                    varer av lav verdi, sier han.
+                    Politiet påpeker at disse mørke tallene kan skjule omfanget av problemet og gjør det
+                    vanskeligere å prioritere ressurser til forebygging og oppfølging i utsatte områder.
+                </p>
+            </article>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll(".section");
+            const container = document.querySelector(".container");
+
+
+            const options = {
+                root: null,
+                threshold: 0.5,
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        const bgImage = entry.target.getAttribute("data-bg");
+
+                        if (bgImage) {
+                            container.style.backgroundImage = `url(${bgImage})`;
+
+                            setTimeout(() => {
+                                container.style.backgroundImage = `url(${bgImage})`;
+                            }, 1000);
+                        }
+                    }
+                });
+            }, options);
+
+            sections.forEach((section) => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
