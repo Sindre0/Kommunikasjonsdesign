@@ -63,7 +63,10 @@ footer ul li {
 
 .container {
   width: 100%;
-  background-size: cover;
+  
+  margin: 0 auto; /* Centers the container */
+  background-size:cover; /* Adjusts size proportionally */
+  background-position: center center; /* Ensures it's centered */
   background-attachment: fixed;
   transition: background-image 1s ease-in-out;
 }
