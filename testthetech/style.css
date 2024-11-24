@@ -18,7 +18,7 @@ html {
 header {
   text-align: center;
   padding: 1.5rem;
-  background-color: rgb(255, 99, 99);
+  background-color: #405b97;
 }
 
 a {
@@ -48,9 +48,10 @@ p, ul li {
 }
 
 footer {
-  background-color: rgb(255, 99, 99);
+  background-color: rgb(6,57,112);
   text-align: center;
   padding: 3rem 0rem 3rem 0rem;
+  color: #fff;
 }
 
 footer ul {
