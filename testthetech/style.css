@@ -75,7 +75,10 @@ footer ul li {
 
 .container {
   width: 100%;
-  background-size: cover;
+
+  margin: 0 auto; /* Centers the container */
+  background-size:cover; /* Adjusts size proportionally */
+  background-position: center center; /* Ensures it's centered */
   background-attachment: fixed;
   transition: background-image 1s ease-in-out;
 }
@@ -121,4 +124,17 @@ figcaption {
   max-width: 500px;
   width: 100%;
   margin: 50px auto 70px auto;
+}
+
+@media only screen and (max-width: 600px) {
+  main h1{
+    font-size: 2rem;
+  }
+  main h2{
+    font-size: 1.5rem;
+  }
+  p, ul li {
+  line-height: 1.5;
+  font-size: 16px;
+}
 }
