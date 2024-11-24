@@ -80,7 +80,7 @@ footer ul li {
   background-size:cover; /* Adjusts size proportionally */
   background-position: center center; /* Ensures it's centered */
   background-attachment: fixed;
-  transition: background-image 1s ease-in-out;
+  transition: background-image 0.3s ease-in-out;
 }
 
 .section .bgp {
@@ -100,7 +100,7 @@ footer ul li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 10px;
 }
 
 .normal-section article {
@@ -111,17 +111,18 @@ footer ul li {
 .normal-section img,
 .normal-section figure img {
   width: 100%;
-  max-height: 400px;
+  max-height: 520px;
   object-fit: cover;
 }
 
 figcaption {
   text-align: left;
-  font-size: 20px;
+  font-size: 15px;
+  color: rgb(75, 72, 72);
 }
 
 .paragraph {
-  max-width: 500px;
+  max-width: 650px;
   width: 100%;
   margin: 50px auto 70px auto;
 }
@@ -136,5 +137,9 @@ figcaption {
   p, ul li {
   line-height: 1.5;
   font-size: 16px;
+}
+.normal-section img,
+.normal-section figure img {
+  max-height: 350px;
 }
 }
