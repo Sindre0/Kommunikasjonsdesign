@@ -52,6 +52,7 @@ footer {
   text-align: center;
   padding: 3rem 0rem 3rem 0rem;
   color: #fff;
+  margin-top: 5rem;
 }
 
 footer ul {
@@ -87,7 +88,7 @@ footer ul li {
 .section .bgp {
   font-size: 2rem;
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 10px 20px;
   border-radius: 8px;
 }
@@ -125,7 +126,7 @@ figcaption {
 .paragraph {
   max-width: 650px;
   width: 100%;
-  margin: 50px auto 70px auto;
+  margin: 60px auto 20px auto;
 }
 
 @media only screen and (max-width: 600px) {
