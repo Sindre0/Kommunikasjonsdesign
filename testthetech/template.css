@@ -10,11 +10,19 @@
 
 
 main article {
-  margin: 40px 0;
+  margin: 80px 0;
 }
 
 main article p {
   margin: 1rem 0rem 4rem 0rem;
+}
+
+main article img {
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+main h1 {
+  margin: 1rem 0rem 0rem 0rem;
 }
 
 main{

@@ -29,8 +29,8 @@ a {
 
 main h1,
 main h2 {
-  margin-bottom: 1rem;
-  font-size: 3.25rem;
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
 }
 
 main h2 {
@@ -142,5 +142,8 @@ figcaption {
 .normal-section img,
 .normal-section figure img {
   max-height: 350px;
+}
+.section .bgp {
+  font-size: 1.5rem;
 }
 }
