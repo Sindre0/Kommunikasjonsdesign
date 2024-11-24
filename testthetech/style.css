@@ -15,6 +15,18 @@ html {
   background-color: rgb(239, 245, 245);
 }
 
+header {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgb(255, 99, 99);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+
 main h1,
 main h2 {
   margin-bottom: 1rem;

@@ -1,14 +1,4 @@
-header {
-  text-align: center;
-  padding: 1.5rem;
-  background-color: rgb(255, 99, 99);
-}
 
-a {
-  color: #000;
-  text-decoration: none;
-  list-style: none;
-}
 
 .main {
   background-color: #ffffff;
@@ -25,18 +15,4 @@ main article {
 
 main article p {
   margin: 1rem 0rem 4rem 0rem;
-}
-
-footer {
-  background-color: rgb(255, 99, 99);
-  text-align: center;
-  padding: 3rem 0rem 3rem 0rem;
-}
-
-footer ul {
-  padding: 3rem 0rem 3rem 0rem;
-}
-
-footer ul li {
-  margin-bottom: 0.5rem;
 }
