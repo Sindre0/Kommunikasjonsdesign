@@ -7,7 +7,7 @@ figcaption {
     color: #ffffff;
   }
 
-h1, h2, h3 {
+h1, h2 {
     color: #96e4c5;
 }
 
@@ -17,4 +17,8 @@ h1, h2, h3 {
 
 img {
     border: 5px solid #323d4d
+}
+
+h3 {
+    font-size: 24px;
 }
