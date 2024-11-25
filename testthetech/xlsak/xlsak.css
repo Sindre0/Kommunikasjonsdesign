@@ -14,3 +14,7 @@ h1, h2, h3 {
 .section .bgp {
     background-color: rgba(31,36,49,255);
 }
+
+img {
+    border: 5px solid #323d4d
+}
